@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<meta property="og:description" content="Richmond Virginia Based Web Company">
+<meta property="og:image" content="https://birddogdevelopment.com/wp-content/themes/birdDogDev/img/DEVELOPMENT-white.png">    
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+
+<link href="https://fonts.googleapis.com/css?family=Eczar|Gentium+Basic" rel="stylesheet">    
+    
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">    
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>    
+
+    
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="logo">
+        <img src="NPLogo.png">
+    </div>
+    
+    <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About Us</li></a>
+        <a href="#"><li>Donate</li></a>
+        <a href="#"><li>Programs</li></a>
+        <a href="#"><li>Blog</li></a>
+    </ul>
+</nav>    
+    
+<div class="site-wrap">
+    <div class="front-cta">
+        
+        <div class="cta-wrap">
+        <h1>We Need Your Help!</h1>
+        <h4>With out you we will never meet our goals and with out our goals we have nothing!</h4>
+        <a href="#" class="donate-cta"><p>Donate Now</p></a>
+        </div>
+    </div>
+    
+    <div class="keystones-wrap">
+    
+        <div class="keystone">
+            <h2>We Impower</h2>
+            <p>These are the things that we can do to bring you where you need to be. With out it we are lost. </p>
+            <a href="#" class="donate-cta"><p>Donate Now</p></a>
+        </div>  
+        
+        <div class="keystone">
+            <h2>We Feed</h2>
+            <p>These are the things that we can do to bring you where you need to be. With out it we are lost. </p>
+            <a href="#" class="donate-cta"><p>Donate Now</p></a>
+        </div>    
+        
+        <div class="keystone">
+            <h2>We Create</h2>
+            <p>These are the things that we can do to bring you where you need to be. With out it we are lost. </p>
+            <a href="#" class="donate-cta"><p>Donate Now</p></a>
+        </div>
+    </div>
+    
+    <div class="info-graphic-wrap">
+    
+        <div class="info-photo-left">
+            <img src="man-person-blur-people-girl-woman-916961-pxhere.com.jpg">
+        </div>
+        
+        <div class="info-text-right">
+        
+            <h3>Helping with waste</h3>
+            <p>Here we see a group helping with the waste in the water shed. People are ready to work!</p>
+            <a href="#" class="donate-cta"><p>Donate Now</p></a>
+            
+        </div>    
+        
+        <div class="info-photo-right">
+            <img src="pattern-jeans-spring-fashion-clothing-denim-870270-pxhere.com.jpg">
+        </div>
+        
+        <div class="info-text-left">
+        
+            <h3>Helping with waste</h3>
+            <p>Here we see a group helping with the waste in the water shed. People are ready to work!</p>
+            <a href="#" class="donate-cta"><p>Donate Now</p></a>
+            
+        </div>
+        
+    </div>
+ 
+    <div class="doners-wrap">
+    
+        <h3>People We Work With</h3>
+        
+        <div class="doners">
+        
+            <img src="domEnergy.png" />
+            <img src="foodbankframe.jpg" />
+            <img src="VillageBank.jpg" />
+            <img src="vCredit.jpg" />
+            
+        </div>
+    
+    </div>
+    <div class="last-CTA-wrap">
+    
+        <h4>Please Help Us Spread Our Message</h4>
+        
+        <div class="last-CTA">
+        
+            <img src="NPLogo.png">
+            
+            <div class="buttons-CTA">
+            
+            <a href="#" class="donate-cta"><p>Donate Now</p></a> 
+            <a href="#" class="learn-cta"><p>Learn More</p></a>                
+            </div>
+        
+        </div>
+        
+        
+    
+    </div>
+    
+    <div class="footer">
+    
+        <img src="NPLogo.png" />
+        
+        <ul>
+            <li>Our Address</li>
+            <li>1356 East Timor Rd</li>
+            <li>Richmond, VA</li>
+            <li>23112</li>
+        </ul>    
+        
+        <ul>
+            <li>Contact Info</li>
+            <li>(800)-989-9876</li>
+            <li>Email@gymkata.com</li> 
+        </ul>    
+        
+        <ul>
+            <li>Recent Blog Posts</li>
+            <li><a href="#">The Fun Event</a></li>
+            <li><a href="#">Why We Need to Change</a></li>
+            <li><a href="#">Who Makes Those Rules</a></li> 
+            <li><a href="#">More Fun Facts</a></li>
+        </ul>
+        
+        <p>All rights reserved by Bird Dog Development</p>
+        <p>&copy;2018 BirdDogDevelopment  </p>  
+        
+    </div>
+
+    
+</div>    
+    
+
+<script>
+
+    const nav = document.querySelector('.top-nav');
+    const wrapper = document.querySelector('.site-wrap');
+    const topOfNav = nav.clientHeight ; 
+console.log(topOfNav);
+function fixNav(){
+
+    if(window.scrollY >= 96){
+        console.log(window.scrollY +'first'+ topOfNav); 
+        wrapper.style.paddingTop = nav.clientHeight + 'px';
+        document.body.classList.add('fixed-nav');
+    }
+    else{
+        document.body.classList.remove('fixed-nav');
+        wrapper.style.paddingTop = 0;
+    }
+    
+}
+    
+window.addEventListener('scroll', fixNav)
+</script>    
+    
+</body>
+</html>
